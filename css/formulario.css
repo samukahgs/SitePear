@@ -1,0 +1,80 @@
+.temaSite {
+    background-color: #1d2837;
+
+}
+
+.boxFormulario {
+
+    justify-content: center;
+    width: 550px;
+    height: 550px;
+    border: #545454;
+    background-color: #545454;
+    margin: 0 auto;
+    margin-top: 150;
+    padding: 20;
+
+}
+
+.boxLinhas {
+    margin-top: 5px;
+    margin-left: 45px;
+    width: 200px;
+    height: 30px;
+    background-color: #998f8f;
+    margin-bottom: 15;
+
+}
+
+
+
+.boxLinha3{
+    margin-top: 10px;
+    margin-left: 45px;
+    width: 450px;
+    height:100px;
+    background-color: #998f8f;
+    margin-bottom: 55;
+}
+.boxBotao{
+    margin-left: 165;
+    margin-top: -30;
+    width: 225;
+    height: 50;
+    background-color: #2fb843;
+    color: white;
+
+
+}
+
+body {
+    margin: 0;
+    background-color: #1d2837;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.p{
+    color: white;
+    margin-right: 0px;
+    margin-top: 35px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    /* background-color: #2fb843; */
+    /* border: 1px black solid; */
+    display: inline-block;
+    width: 190;
+
+    
+}
+
+span{
+    /* background-color: #2fb843; */
+}
+.titulo{
+    width: 50;
+    /* background-color: yellow; */
+}
