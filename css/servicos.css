@@ -24,26 +24,27 @@ body{
 }
 .menuservicos input:checked + label{
     background-color: #216239;
-    display:inline-block;
     transition: 0.3s;
+}
+input[type="radio"]{
+    display: none;
 }
 .info{
     display: none;
-    padding:inherit;
 }
 #busca:checked ~ .conteudo .busca{
     display: block;
 }
-#busca:checked ~ .conteudo .consul{
+#consul:checked ~ .conteudo .consul{
     display: block;
 }
-#busca:checked ~ .conteudo .design{
+#design:checked ~ .conteudo .design{
     display: block;
 }
-#busca:checked ~ .conteudo .dev{
+#dev:checked ~ .conteudo .dev{
     display: block;
 }
-#busca:checked ~ .conteudo .projetos{
+#projetos:checked ~ .conteudo .projetos{
     display: block;
 }
 .entrarcontat{
@@ -87,4 +88,7 @@ body{
 .containersevicos{
     gap: 50px;
     margin: 0 auto;
+}
+.conteudo{
+    color: white;
 }
