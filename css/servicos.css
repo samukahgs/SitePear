@@ -2,7 +2,6 @@ body{
     background-color: #1a222e;
 }
 .menuservicos{
-    -webkit-text-fill-color: white;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -14,11 +13,10 @@ body{
     display: none;
 }
 .menuservicos label{
-    margin-left: 5px;
-    cursor: pointer;
     padding: 12px 10px;
-    background-color: rgb(13, 20, 49);
+    background: #0f1b35;
     color: white;
+    cursor: pointer;
     transition: 0.3s;
 }
 .menuservicos label:hover{
@@ -57,22 +55,36 @@ input[type="radio"]{
     display: block;
 }
 .entrarcontat{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     text-align: center;
-    -webkit-text-fill-color: white;
-    margin-top: 200px;
+    color: white;
+
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 250px;
+
+    padding-left:300px;
+    padding-right:300px;
+    padding-top: 200px;
+
+    border-radius: 40px;
+
+    position: relative;
+    overflow: hidden;
+}
+.entrarcontat::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
     background-image: url("https://estaticos.animaeducacao.com.br/medias/20250514152622/-_Imagem_-_An%C3%A1lise_e_Desenvolvimento_de_Sistemas_o_que_faz_o_profissional.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: auto;
-    padding-left:300px;
-    padding-right:300px;
-    padding-top: 200px;
-    margin-bottom: 50px;
-    margin-top: 250px;
-    border-radius: 40px;
+
+    opacity: 0.4;
+    z-index: -1;
 }
 .entrarcontat label{
     display: block;
@@ -105,8 +117,9 @@ input[type="radio"]{
     display:flex;
     gap:60px;
     width: 80%;
-    max-width: 1200%;
+    max-width: 1200px;
 }
 .conteudo{
+    flex: 1;
     color: white;
 }
