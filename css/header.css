@@ -63,44 +63,5 @@
 
 
 
-.header {
-  background: linear-gradient(90deg, rgb(158, 158, 158) 0%, rgb(255, 255, 255), 50%, rgb(156, 156, 156) 100%);
-  color: white;
-}
-
-.container {
-    width: 90%;
-    max-width: 1700px;
-    margin: 0 auto;
-}
-
-.logo img {
-  height: 100px;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu {
-    font-size: 20;
-    list-style: none;
-    display: flex;
-    gap: 100px;
-    margin: 0;
-    padding: 0;
-}
-
-.menu a {
-  text-decoration: none;
-  color: rgb(83, 82, 82);
-  transition: 0.3s;
-}
-
-.menu a:hover {
-  color: #00bfff;
-}
 
 
