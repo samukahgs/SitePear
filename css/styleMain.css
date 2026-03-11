@@ -22,9 +22,10 @@
 }
 
 .menu {
+    font-size: 20;
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 100px;
     margin: 0;
     padding: 0;
 }
@@ -208,7 +209,7 @@ body {
 }
 
 .hero {
-    background-image: url(../imgs/giffundo.gif);
+    background-image: url(../imgs/EHESSEEE.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
