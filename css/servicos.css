@@ -133,3 +133,45 @@ font-weight:bold;
 .botaocontat:hover{
 transform:translateY(-4px);
 }
+.card-servico{
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+border-radius:14px;
+padding:40px;
+transition:all .35s ease;
+animation:fade .5s ease;
+}
+
+.card-servico:hover{
+transform:translateY(-8px);
+border-color:#00a3ff;
+box-shadow:0 10px 30px rgba(0,163,255,.25);
+}
+
+
+
+.card-servico h2{
+font-size:30px;
+margin-bottom:10px;
+}
+
+
+
+.card-servico p{
+font-size:16px;
+opacity:.85;
+line-height:1.6;
+max-width:500px;
+}
+
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(15px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
