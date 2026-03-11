@@ -1,5 +1,7 @@
 <head>
     <link rel="stylesheet" href="../css/styleMain.css">
+    <link rel="stylesheet" href="../css/header.css">
+ 
 
     <title>Pear</title>
 
@@ -7,31 +9,41 @@
 
 <body>
     <header class="header">
-        <div class="container nav-container">
-        <div class="logo">
-            <a href="../html/main.html"><img src="../imgs/LogoPEAR.png" alt="loguinho"></a>
-            
-            
-        </div>
 
-        <nav>
-            <ul class="menu">
-                <li><a href="../html/quemSomos.html">Quem Somos</a></li>
-                <li><a href="../html/servicos.html">Serviços</a></li>
-                <li><a href="../html/formulario.html">Contato</a></li>
-            </ul>
-        </nav>
+<div class="container nav-container">
 
-        <div class="language-selector">
-            <img src="../imgs/brasil.png" class="flag">
-            <span class="arrow">▾</span>
-            </div>
-    </header>
-    
-    <main>
+<div class="logo">
+<img src="../imgs/LogoPEAR.png">
+</div>
 
-    </div>
-    
+<nav>
+<ul class="menu">
+
+<li><a href="../HTML/index.html">Home</a></li>
+<li><a href="../HTML/quemSomos.html">Quem Somos</a></li>
+<li><a href="../HTML/servicos.html">Serviços</a></li>
+<li><a href="../HTML/formulario.html">Contato</a></li>
+
+</ul>
+</nav>
+
+<div class="language-selector">
+
+<button onclick="traduzir('pt')" class="lang-btn">
+<img src="../Imagens/brasil.png" class="flag">
+PT
+</button>
+
+<button onclick="traduzir('en')" class="lang-btn">
+<img src="../Imagens/eua.png" class="flag">
+EN
+</button>
+
+</div>
+
+</div>
+
+</header>    
     <section class="hero">
         <img src="../imgs/essaaqui.png" class="hero-img">
         <div class="hero-texto">
@@ -235,5 +247,9 @@
         </div>
 
     </footer>
-    
+    <div id="google_translate_element" style="display:none"></div>
+<div id="google_translate_element" style="display:none;"></div>
+
+<script src="../JS/translate.js"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>

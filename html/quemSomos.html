@@ -9,34 +9,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap"rel="stylesheet"
     />
     
-    <link rel="stylesheet" href="../css/header.css">
+   
     <link rel="stylesheet" href="../css/quemSomos.css" />
+    <link rel="stylesheet" href="../css/header.css">
     
     <title>Quem Somos</title>
   </head>
 
 <body>
-<header class="header">
-        <div class="container nav-container">
-        <div class="logo">
-            <a href="../html/main.html"><img src="../imgs/LogoPEAR.png" alt="loguinho"></a>
-            
-            
-        </div>
+  <header class="header">
 
-        <nav>
-            <ul class="menu">
-                <li><a href="../html/quemSomos.html">Quem Somos</a></li>
-                <li><a href="../html/servicos.html">Serviços</a></li>
-                <li><a href="../html/formulario.html">Contato</a></li>
-            </ul>
-        </nav>
+<div class="container nav-container">
 
-        <div class="language-selector">
-            <img src="../imgs/brasil.png" class="flag">
-            <span class="arrow">▾</span>
-            </div>
-    </header>
+<div class="logo">
+<img src="../imgs/LogoPEAR.png" alt="Logo">
+</div>
+
+<nav>
+<ul class="menu">
+
+<li><a href="../HTML/main.html">Home</a></li>
+<li><a href="../html/quemSomos.html">Quem Somos</a></li>
+<li><a href="../html/servicos.html ">Serviços</a></li>
+<li><a href="../html/formulario.html">Contato</a></li>
+
+</ul>
+</nav>
+
+<div class="language-selector">
+
+<button onclick="traduzir('pt')" class="lang-btn">
+<img src="../imgs/brasil.png" class="flag">
+PT
+</button>
+
+<button onclick="traduzir('en')" class="lang-btn">
+<img src="../imgs/8281549.png" class="flag">
+EN
+</button>
+
+</div>
+
+</div>
     <main>
       <section class="hero">
         <h1>Somos sua <span class="palavra-colorida">solução</span>.</h1>
@@ -199,6 +213,9 @@
         </div>
 
     </footer>
+<div id="google_translate_element" style="display:none"></div>
 
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="../JS/translate.js"></script>
   </body>
 </html>
