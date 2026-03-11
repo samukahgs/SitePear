@@ -1,175 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap"rel="stylesheet"
+    />
 
-<title>Nossos Serviços</title>
-
-<link rel="stylesheet" href="../css/servicos.css">
-<link rel="stylesheet" href="../css/header.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-</head>
+    <link rel="stylesheet" href="../css/quemSomos.css" />
+    <link rel="stylesheet" href="../css/header.css">
+    <title>Quem Somos</title>
+  </head>
 
 <body>
-
 <header class="header">
-<div class="container nav-container">
+        <div class="container nav-container">
+        <div class="logo">
+          <a href="../html/main.html"><img src="../imgs/LogoPEAR.png" alt="loguinho"></a>
+        </div>
 
-<div class="logo">
-<a href="main.html">
-<img src="../imgs/LogoPEAR.png" alt="Logo">
-</a>
-</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
 
-<nav>
-<ul class="menu">
-<li><a href="quemsomos.html">Quem Somos</a></li>
-<li><a href="#">Serviços</a></li>
-<li><a href="contato.html">Contato</a></li>
-</ul>
-</nav>
+        <div class="language-selector">
+            <img src="imgs/brasil.png" class="flag">
+            <span class="arrow">▾</span>
+            </div>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Somos sua <span class="palavra-colorida">solução</span>.</h1>
+        <p>
+          Referência em desenvolvimento e aplicações,<br />
+          com mais de dez anos de experiência no mercado.
+        </p>
+      </section>
 
-<div class="language-selector">
-<img src="../imgs/brasil.png" class="flag" alt="Português">
-<span class="arrow">▾</span>
-</div>
+      <section class="secao">
+        <h2 class="equipe1">Nossa equipe</h2>
 
-</div>
-</header>
+        <div class="grid">
+          <figure class="card">
+            <img class="avatar" src="../imgs/Alisson.PNG" alt="Alisson" />
+            <h3>ALISSON</h3>
+            <figcaption>Função/Posição: Engenheiro de Dados</figcaption>
+          </figure>
 
-<main>
+          <figure class="card">
+            <img class="avatar" src="../imgs/diogo.PNG" alt="Diogo" />
+            <h3>DIOGO</h3>
+            <figcaption>Função/Posição: Back-end</figcaption>
+          </figure>
 
-<section class="servicos">
+          <figure class="card">
+            <img class="avatar" src="../imgs/guilherme.PNG" alt="Guilherme" />
+            <h3>GUILHERME</h3>
+            <figcaption>Função/Posição: Front-end</figcaption>
+          </figure>
 
-<h1 class="titulo">Nossos Serviços</h1>
+          <figure class="card">
+            <img class="avatar" src="../imgs/samuel.PNG" alt="Samuel" />
+            <h3>SAMUEL</h3>
+            <figcaption>Função/Posição: Front-end</figcaption>
+          </figure>
 
-<div class="containerservicos">
+          <figure class="card">
+            <img class="avatar" src="../imgs/thiago.PNG" alt="Thiago" />
+            <h3>THIAGO</h3>
+            <figcaption>Função/Posição: Back-end</figcaption>
+          </figure>
+        </div>
+      </section>
 
-<input type="radio" name="menu" id="busca" checked>
-<input type="radio" name="menu" id="consul">
-<input type="radio" name="menu" id="design">
-<input type="radio" name="menu" id="dev">
-<input type="radio" name="menu" id="projetos">
+      <section class="secao">
+        <h2>Tecnologias</h2>
+        <p class="subtitulo">Tecnologias dominadas pela empresa</p>
 
-<div class="menuservicos">
+        <div class="grid tecnologias">
+          <figure class="card">
+            <img class="icone flutuar" src="../imgs/css.svg" alt="CSS" />
+            <h3>CSS</h3>
+            <figcaption>
+              CSS (Cascading Style Sheets) é a linguagem padrão para estilizar e
+              definir a apresentação visual de documentos HTML.
+            </figcaption>
+          </figure>
 
-<label for="busca"><i class="fa-regular fa-file-lines"></i> Busca UX</label>
+          <figure class="card">
+            <img class="icone flutuar" src="../imgs/html.png" alt="HTML" />
+            <h3>HTML</h3>
+            <figcaption>
+              HTML (HyperText Markup Language) é a linguagem padrão usada para
+              estruturar páginas web.
+            </figcaption>
+          </figure>
 
-<label for="consul"><i class="fa-regular fa-lightbulb"></i> Consultoria</label>
+          <figure class="card">
+            <img class="icone flutuar" src="../imgs/js.png" alt="JavaScript" />
+            <h3>JavaScript</h3>
+            <figcaption>
+              JavaScript é uma linguagem essencial para tornar sites interativos,
+              responsivos e dinâmicos.
+            </figcaption>
+          </figure>
 
-<label for="design"><i class="fa-solid fa-pen-fancy"></i> Design</label>
+          <figure class="card">
+            <img class="icone flutuar" src="../imgs/py.png" alt="Python" />
+            <h3>Python</h3>
+            <figcaption>
+              Python é uma linguagem de alto nível, conhecida pela sintaxe simples
+              e legibilidade.
+            </figcaption>
+          </figure>
 
-<label for="dev"><i class="fa-solid fa-code"></i> Desenvolvimento</label>
+          <figure class="card">
+            <img class="icone flutuar" src="../imgs/php.png" alt="PHP" />
+            <h3>PHP</h3>
+            <figcaption>
+              PHP é uma linguagem server-side open-source muito usada no
+              desenvolvimento web dinâmico.
+            </figcaption>
+          </figure>
 
-<label for="projetos"><i class="fa-solid fa-diagram-project"></i> Projetos</label>
+          <figure class="card">
+            <img class="icone flutuar" src="../imgs/sql-removebg-preview.png" alt="SQL" />
+            <h3>SQL</h3>
+            <figcaption>
+              SQL (Structured Query Language) é a linguagem padrão para gerenciar
+              e manipular bancos de dados relacionais.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
 
-</div>
+      <section class="secao animacao-texto">
+        <div class="content">
+          <div class="content__container">
+            <p class="content__text">Somos</p>
 
-<div class="conteudo">
+            <ul class="content__list">
+              <li class="content__item">Tecnologia !</li>
+              <li class="content__item">Inovação !</li>
+              <li class="content__item">Solução !</li>
+              <li class="content__item">Pear </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<div class="info busca">
-<h2>Busca UX</h2>
-<p>Texto explicando Busca UX...</p>
-</div>
-
-<div class="info consul">
-<h2>Consultoria</h2>
-<p>Texto explicando Consultoria...</p>
-</div>
-
-<div class="info design">
-<h2>Design</h2>
-<p>Texto explicando Design...</p>
-</div>
-
-<div class="info dev">
-<h2>Desenvolvimento</h2>
-<p>Texto explicando Desenvolvimento...</p>
-</div>
-
-<div class="info projetos">
-<h2>Projetos</h2>
-<p>Texto explicando Projetos...</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-
-<section class="entrarcontat">
-<h1>Aplique agora, expanda já!</h1>
-
-<div class="botaocontat">
-<a href="formulario.html">Entrar em contato</a>
-</div>
-</section>
-
-
-<section class="hero">
-
-<div id="carouselExampleCaptions" class="carousel slide">
-
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
-<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
-<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
-</div>
-
-<div class="carousel-inner">
-
-<div class="carousel-item active">
-<img src="../imgs/dev1.jpg" class="d-block w-100" alt="">
-<div class="carousel-caption">
-<h5>Desenvolvimento Web</h5>
-<p>Criamos sistemas modernos e escaláveis.</p>
-</div>
-</div>
-
-<div class="carousel-item">
-<img src="../imgs/dev2.jpg" class="d-block w-100" alt="">
-<div class="carousel-caption">
-<h5>Design e UX</h5>
-<p>Interfaces modernas focadas no usuário.</p>
-</div>
-</div>
-
-<div class="carousel-item">
-<img src="../imgs/dev3.jpg" class="d-block w-100" alt="">
-<div class="carousel-caption">
-<h5>Projetos Tecnológicos</h5>
-<p>Soluções digitais para empresas.</p>
-</div>
-</div>
-
-</div>
-
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-<span class="carousel-control-prev-icon"></span>
-</button>
-
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-<span class="carousel-control-next-icon"></span>
-</button>
-
-</div>
-
-</section>
-
-</main>
-
-<footer></footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+  </body>
 </html>
