@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Nossos Serviços</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,7 +12,6 @@
     <link rel="stylesheet" href="../css/servicos.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body data-bs-theme="dark">
@@ -43,164 +41,179 @@
         </div>
     </header>
 
+    <main>
 
-<main>
+        <section class="servicos">
 
-<section class="servicos">
+            <h1 class="titulo">Nossos Serviços</h1>
 
-<h1 class="titulo">Nossos Serviços</h1>
+            <div class="containerservicos">
 
-<div class="containerservicos">
+                <input type="radio" name="menu" id="busca" checked>
+                <input type="radio" name="menu" id="consul">
+                <input type="radio" name="menu" id="design">
+                <input type="radio" name="menu" id="dev">
+                <input type="radio" name="menu" id="projetos">
 
-<input type="radio" name="menu" id="busca" checked>
-<input type="radio" name="menu" id="consul">
-<input type="radio" name="menu" id="design">
-<input type="radio" name="menu" id="dev">
-<input type="radio" name="menu" id="projetos">
+                <div class="menuservicos">
 
-<div class="menuservicos">
+                    <label for="busca">
+                        <img src="../imgs/paper.png" width="20"> Busca UX
+                    </label>
 
-<label for="busca">
-<i class="fa-regular fa-file-lines"></i> Busca UX
-</label>
+                    <label for="consul">
+                        <img src="../imgs/lightbulb.png" width="20"> Consultoria
+                    </label>
 
-<label for="consul">
-<i class="fa-regular fa-lightbulb"></i> Consultoria
-</label>
+                    <label for="design">
+                        <img src="../imgs/pen.png" width="20"> Design
+                    </label>
 
-<label for="design">
-<i class="fa-solid fa-pen-fancy"></i> Design
-</label>
+                    <label for="dev">
+                        <img src="../imgs/code-signs.png" width="20"> Desenvolvimento
+                    </label>
 
-<label for="dev">
-<i class="fa-solid fa-code"></i> Desenvolvimento
-</label>
+                    <label for="projetos">
+                        <img src="../imgs/mouse.png" width="20"> Projetos
+                    </label>
 
-<label for="projetos">
-<i class="fa-solid fa-diagram-project"></i> Projetos
-</label>
+                </div>
 
-</div>
+                <div class="conteudo">
 
+                    <div class="info busca">
+                        <h2>Busca UX</h2>
+                        <p>Pesquisa e análise de experiência do usuário para entender necessidades e melhorar produtos digitais.</p>
+                    </div>
 
-<div class="conteudo">
+                    <div class="info consul">
+                        <h2>Consultoria</h2>
+                        <p>Ajudamos empresas a definir estratégias tecnológicas e digitais eficientes.</p>
+                    </div>
 
-<div class="info busca card-servico">
-<h2>Busca UX</h2>
-<p>Entendemos os usuários antes de criar soluções digitais eficientes.</p>
-</div>
+                    <div class="info design">
+                        <h2>Design</h2>
+                        <p>Criamos interfaces modernas e intuitivas focadas na melhor experiência do usuário.</p>
+                    </div>
 
-<div class="info consul card-servico">
-<h2>Consultoria</h2>
-<p>Transformamos desafios digitais em estratégias de crescimento.</p>
-</div>
+                    <div class="info dev">
+                        <h2>Desenvolvimento</h2>
+                        <p>Desenvolvimento de sistemas, plataformas e aplicações web modernas.</p>
+                    </div>
 
-<div class="info design card-servico">
-<h2>Design</h2>
-<p>Criamos interfaces modernas e intuitivas focadas na experiência.</p>
-</div>
+                    <div class="info projetos">
+                        <h2>Projetos</h2>
+                        <p>Planejamento e execução de projetos digitais completos para empresas.</p>
+                    </div>
 
-<div class="info dev card-servico">
-<h2>Desenvolvimento</h2>
-<p>Construímos plataformas digitais rápidas e escaláveis.</p>
-</div>
+                </div>
 
-<div class="info projetos card-servico">
-<h2>Projetos</h2>
-<p>Planejamento e execução de soluções tecnológicas completas.</p>
-</div>
+            </div>
 
-</div>
-
-</div>
-
-</div>
-
-</section>
+        </section>
 
 
-<section class="entrarcontat">
+        <section class="entrarcontat">
 
-<h1>Aplique agora, expanda já!</h1>
+            <h1>Aplique agora, expanda já!</h1>
 
-<div class="botaocontat">
-<a href="formulario.html">Entrar em contato</a>
-</div>
-</section>
+            <div class="botaocontat">
+                <a href="formulario.html">Entrar em contato</a>
+            </div>
 
-<section class="accordion">
-<div class="outrosservicos">
-
-<h1 class="titulo">Outros Serviços</h1>
+        </section>
 
 
-</div>
+        <section class="accordion">
+
+            <div class="outrosservicos">
+                <h1 class="titulo">Outros Serviços</h1>
+            </div>
 
 
+            <!-- ITEM 1 -->
+            <div class="item">
 
-<div class="item">
-<input type="checkbox" id="codigo">
+                <input type="checkbox" id="codigo">
 
+                <label for="codigo" class="titulooutros">
+                    Análise de Código
+                    <span class="icon">+</span>
+                </label>
 
-<label for="codigo" class="titulooutros">
-Análise de Código
-<span class="icon">+</span>
-</label>
+                <div class="conteudooutros">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Iure aspernatur rerum suscipit.
+                    </p>
+                </div>
 
-
-
-<div class="conteudooutros">
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aspernatur rerum suscipit. Aliquam sed cupiditate repudiandae perspiciatis dicta aperiam cum dolorem dolorum unde? Cumque dolorem rem, minima dolores libero cum!
-</p>
-
-<div class="item">
-<input type="checkbox" id="manutencao">
-
-
-<label for="manutencao" class="titulooutros">
-Hospedagem e Manutenção
-<span class="icon">+</span>
-</label>
+            </div>
 
 
+            <!-- ITEM 2 -->
+            <div class="item">
 
-<div class="conteudooutros">
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aspernatur rerum suscipit. Aliquam sed cupiditate repudiandae perspiciatis dicta aperiam cum dolorem dolorum unde? Cumque dolorem rem, minima dolores libero cum!
-</p>
+                <input type="checkbox" id="manutencao">
 
-<div class="item">
-<input type="checkbox" id="ousourcing">
+                <label for="manutencao" class="titulooutros">
+                    Hospedagem e Manutenção
+                    <span class="icon">+</span>
+                </label>
 
+                <div class="conteudooutros">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Iure aspernatur rerum suscipit.
+                    </p>
+                </div>
 
-<label for="ousourcing" class="titulooutros">
-outsourcing de Desenvolvedores
-<span class="icon">+</span>
-</label>
-
-<div class="conteudooutros">
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aspernatur rerum suscipit. Aliquam sed cupiditate repudiandae perspiciatis dicta aperiam cum dolorem dolorum unde? Cumque dolorem rem, minima dolores libero cum!
-</p>
-
-<div class="item">
-<input type="checkbox" id="lgpd">
+            </div>
 
 
-<label for="lgpd" class="titulooutros">
-Consultoria em GDPR e LGPD (Lei Geral de Proteção Digital)
-<span class="icon">+</span>
-</label>
+            <!-- ITEM 3 -->
+            <div class="item">
+
+                <input type="checkbox" id="outsourcing">
+
+                <label for="outsourcing" class="titulooutros">
+                    Outsourcing de Desenvolvedores
+                    <span class="icon">+</span>
+                </label>
+
+                <div class="conteudooutros">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Iure aspernatur rerum suscipit.
+                    </p>
+                </div>
+
+            </div>
 
 
+            <!-- ITEM 4 -->
+            <div class="item">
 
-<div class="conteudooutros">
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aspernatur rerum suscipit. Aliquam sed cupiditate repudiandae perspiciatis dicta aperiam cum dolorem dolorum unde? Cumque dolorem rem, minima dolores libero cum!
-</p>
+                <input type="checkbox" id="lgpd">
 
+                <label for="lgpd" class="titulooutros">
+                    Consultoria em GDPR e LGPD
+                    <span class="icon">+</span>
+                </label>
 
+                <div class="conteudooutros">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Iure aspernatur rerum suscipit.
+                    </p>
+                </div>
 
+            </div>
 
-</section>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
