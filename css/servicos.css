@@ -1,125 +1,153 @@
-body{
-    background-color: #1a222e;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+:root {
+--bg: #1e2836;
+--text: #ffffff;
+--accent: #00a3ff;
+--card: rgba(255, 255, 255, 0.04);
+--border: rgba(255, 255, 255, 0.08);
 }
-.menuservicos{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
+body {
+min-height: 100vh;
+background: var(--bg);
+color: var(--text);
+font-family: "Roboto", sans-serif;
 }
-.titulo{
-    -webkit-text-fill-color: white;
+
+main {
+width: min(1100px, 92%);
+margin: 0 auto;
+padding: 40px 0 80px;
 }
-.menuservicos input{  
-    display: none;
+
+h1,
+h2,
+h3 {
+font-family: "Roboto", sans-serif;
 }
-.menuservicos label{
-    padding: 12px 10px;
-    background: #0f1b35;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
+
+.titulo {
+text-align: center;
+font-size: 38px;
+margin-bottom: 40px;
 }
-.menuservicos label:hover{
-    background:#1e3a6b;
+
+
+
+.servicos {
+margin-top: 60px;
 }
-.menuservicos input:checked + label{
-    background-color: #216239;
-    transition: 0.3s;
+
+
+
+.containerservicos {
+display: flex;
+gap: 40px;
+align-items: flex-start;
 }
-input[type="radio"]{
-    display: none;
+
+
+.menuservicos {
+display: flex;
+flex-direction: column;
+gap: 12px;
+min-width: 200px;
 }
+
+input[type="radio"] {
+display: none;
+}
+
+.menuservicos label {
+padding: 12px 16px;
+background: var(--card);
+border: 1px solid var(--border);
+border-radius: 10px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.menuservicos label:hover {
+transform: translateX(5px);
+background: rgba(255, 255, 255, 0.08);
+}
+
+
+
 #busca:checked ~ .menuservicos label[for="busca"],
 #consul:checked ~ .menuservicos label[for="consul"],
 #design:checked ~ .menuservicos label[for="design"],
 #dev:checked ~ .menuservicos label[for="dev"],
-#projetos:checked ~ .menuservicos label[for="projetos"]{
-     background-color: #216239
+#projetos:checked ~ .menuservicos label[for="projetos"] {
+background: var(--accent);
+color: black;
 }
-.info{
-    display: none;
-}
-#busca:checked ~ .conteudo .busca{
-    display: block;
-}
-#consul:checked ~ .conteudo .consul{
-    display: block;
-}
-#design:checked ~ .conteudo .design{
-    display: block;
-}
-#dev:checked ~ .conteudo .dev{
-    display: block;
-}
-#projetos:checked ~ .conteudo .projetos{
-    display: block;
-}
-.entrarcontat{
-    width: 400px;
-    height: 400px;
-    text-align: center;
-    color: white;
 
-    margin: auto;
-    margin-bottom: 100px;
-    margin-top: 250px;
 
-    padding-left:300px;
-    padding-right:300px;
-    padding-top: 200px;
 
-    border-radius: 40px;
+.conteudo {
+flex: 1;
+}
 
-    position: relative;
-    overflow: hidden;
-}
-.entrarcontat::before{
-    content: "";
-    position: absolute;
-    inset: 0;
 
-    background-image: url("https://estaticos.animaeducacao.com.br/medias/20250514152622/-_Imagem_-_An%C3%A1lise_e_Desenvolvimento_de_Sistemas_o_que_faz_o_profissional.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 
-    opacity: 0.4;
-    z-index: -1;
+.info {
+display: none;
 }
-.entrarcontat label{
-    display: block;
-    margin-bottom: 10px;
+
+#busca:checked ~ .conteudo .busca,
+#consul:checked ~ .conteudo .consul,
+#design:checked ~ .conteudo .design,
+#dev:checked ~ .conteudo .dev,
+#projetos:checked ~ .conteudo .projetos {
+display: block;
 }
-.botaocontat{
-    background-color: #216239;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display:inline-block;
-    transition: 0.3s;
+
+
+
+.card-servico {
+background: var(--card);
+border: 1px solid var(--border);
+border-radius: 14px;
+padding: 30px;
+line-height: 1.6;
+transition: transform 0.3s ease;
 }
-.botaocontat a{
-    text-decoration: none;
-    color: white;
-    padding-left: 15px;
-    padding-right: 15px;
+
+.card-servico:hover {
+transform: translateY(-8px);
 }
-.botaocontat:hover{
-    background-color: #12a144;
+
+.card-servico h2 {
+margin-bottom: 10px;
 }
-.servicos{
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
+
+
+.entrarcontat {
+margin-top: 120px;
+text-align: center;
 }
-.containerservicos{
-    display:flex;
-    gap:60px;
-    width: 80%;
-    max-width: 1200px;
+
+.botaocontat {
+margin-top: 20px;
+display: inline-block;
+background: var(--accent);
+padding: 10px 22px;
+border-radius: 6px;
+transition: 0.3s;
 }
-.conteudo{
-    flex: 1;
-    color: white;
+
+.botaocontat a {
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+
+.botaocontat:hover {
+transform: translateY(-3px);
 }

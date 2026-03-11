@@ -1,83 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossos Serviços</title>
-    <link rel="stylesheet" href="../css/servicos.css">
-    <link rel="stylesheet" href="../css/header.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nossos Serviços</title>
+
+<link rel="stylesheet" href="../css/servicos.css">
+<link rel="stylesheet" href="../css/header.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
+
 <header class="header">
-        <div class="container nav-container">
-        <div class="logo">
-            <a href="main.html"><img src="../imgs/LogoPEAR.png" alt="loguinho"></a>
-        </div>
+    <div class="container nav-container">
 
-        <nav>
-            <ul class="menu">
-                <li><a href="quemsomos.html">Quem Somos</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
 
-        <div class="language-selector">
-            <img src="../imgs/brasil.png" class="flag">
-            <span class="arrow">▾</span>
-            </div>
+    <div class="logo">
+        <a href="main.html">
+            <img src="../imgs/LogoPEAR.png" alt="Logo">
+        </a>
+    </div>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="quemsomos.html">Quem Somos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="language-selector">
+        <img src="../imgs/brasil.png" class="flag" alt="Português">
+        <span class="arrow">▾</span>
+    </div>
+
+</div>
+
+
 </header>
-    <section class="servicos">
-        <h1 class="titulo">Nossos Serviços:</h1>
-    <div class="containerservicos">  
-            <input type="radio" name="menu" id="busca" checked>
-            <input type="radio" name="menu" id="consul">
-            <input type="radio" name="menu" id="design">
-            <input type="radio" name="menu" id="dev">
-            <input type="radio" name="menu" id="projetos">
-            
-            <div class="menuservicos">  
-            <label for="busca"><i class="fa-regular fa-file-lines"></i> Busca UX</label>
-            <label for="consul"><i class="fa-regular fa-lightbulb"></i> Consultoria</label>
-            <label for="design"><i class="fa-solid fa-pen-fancy"></i> Design</label>
-            <label for="dev"> Desenvolvimento</label>
-            <label for="projetos">Projetos</label>
 
-            </div>
-        
-            <div class="conteudo">
-            <div class="info busca">
+<section class="servicos">
+
+
+<h1 class="titulo">Nossos Serviços</h1>
+
+<div class="containerservicos">
+
+    <input type="radio" name="menu" id="busca" checked>
+    <input type="radio" name="menu" id="consul">
+    <input type="radio" name="menu" id="design">
+    <input type="radio" name="menu" id="dev">
+    <input type="radio" name="menu" id="projetos">
+
+    <div class="menuservicos">
+
+        <label for="busca">
+            <i class="fa-regular fa-file-lines"></i> Busca UX
+        </label>
+
+        <label for="consul">
+            <i class="fa-regular fa-lightbulb"></i> Consultoria
+        </label>
+
+        <label for="design">
+            <i class="fa-solid fa-pen-fancy"></i> Design
+        </label>
+
+        <label for="dev">
+            <i class="fa-solid fa-code"></i> Desenvolvimento
+        </label>
+
+        <label for="projetos">
+            <i class="fa-solid fa-diagram-project"></i> Projetos
+        </label>
+
+    </div>
+
+
+    <div class="conteudo">
+
+        <div class="info busca">
             <h2>Busca UX</h2>
-            <p>texto explicando Busca UX...</p>
-            </div>
-
-            <div class="info consul">
-            <h2>Consultoria</h2>
-            <p>texto explicando Consultoria...</p>
-            </div>
-
-            <div class="info design">
-            <h2>Design</h2>
-            <p>texto explicando Design...</p>
-            </div>
-
-            <div class="info dev">
-            <h2>Desenvolvimento</h2>
-            <p>texto explicando Desenvolvimento...</p>
-            </div>
-
-            <div class="info projetos">
-            <h2>Projetos</h2>
-            <p>texto explicando Projetos...</p>
-            </div>
-            </div>
+            <p>Texto explicando Busca UX...</p>
         </div>
+
+        <div class="info consul">
+            <h2>Consultoria</h2>
+            <p>Texto explicando Consultoria...</p>
+        </div>
+
+        <div class="info design">
+            <h2>Design</h2>
+            <p>Texto explicando Design...</p>
+        </div>
+
+        <div class="info dev">
+            <h2>Desenvolvimento</h2>
+            <p>Texto explicando Desenvolvimento...</p>
+        </div>
+
+        <div class="info projetos">
+            <h2>Projetos</h2>
+            <p>Texto explicando Projetos...</p>
+        </div>
+
     </div>
-    </section>
-    <div class="entrarcontat">
-        <h1>Aplique agora, expanda já!</h1>
-        <div class="botaocontat"><a href="formulario.html">Entrar em contato</a></div>
-    </div>
-    <footer></footer>
+
+</div>
+
+
+</section>
+
+<section class="entrarcontat">
+    <h1>Aplique agora, expanda já!</h1>
+
+
+<div class="botaocontat">
+    <a href="formulario.html">Entrar em contato</a>
+</div>
+
+
+</section>
+
+<footer>
+</footer>
+
 </body>
 </html>
