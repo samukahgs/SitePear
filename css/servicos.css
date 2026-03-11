@@ -19,7 +19,7 @@ font-family:"Roboto",sans-serif;
 min-height:100vh;
 }
 
-/* MAIN */
+
 
 main{
 width:min(1100px,92%);
@@ -27,7 +27,7 @@ margin:auto;
 padding:40px 0 80px;
 }
 
-/* TITULO */
+
 
 .titulo{
 text-align:center;
@@ -35,7 +35,7 @@ font-size:38px;
 margin-bottom:40px;
 }
 
-/* SERVIÇOS */
+
 
 .servicos{
 margin-top:60px;
@@ -47,7 +47,7 @@ gap:40px;
 align-items:flex-start;
 }
 
-/* MENU LATERAL */
+
 
 .menuservicos{
 display:flex;
@@ -74,7 +74,7 @@ background:rgba(255,255,255,.1);
 transform:translateX(6px);
 }
 
-/* ITEM SELECIONADO */
+
 
 #busca:checked ~ .menuservicos label[for="busca"],
 #consul:checked ~ .menuservicos label[for="consul"],
@@ -85,7 +85,6 @@ background:var(--accent);
 color:black;
 }
 
-/* CONTEUDO */
 
 .conteudo{
 flex:1;
@@ -99,7 +98,7 @@ padding:30px;
 border-radius:14px;
 }
 
-/* MOSTRAR CONTEUDO */
+
 
 #busca:checked ~ .conteudo .busca,
 #consul:checked ~ .conteudo .consul,
@@ -109,7 +108,7 @@ border-radius:14px;
 display:block;
 }
 
-/* CONTATO */
+
 
 .entrarcontat{
 margin-top:120px;
