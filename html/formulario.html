@@ -1,113 +1,112 @@
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../CSS/formulario.css">
-    <link rel="stylesheet" href="../CSS/header.css">
-    <title>Formulário de Orçamento</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Formulário de Orçamento</title>
+
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/formulario.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body class="temaSite">
 
 <header class="header">
-        <div class="container nav-container">
-        <div class="logo"> 
-            <img src="../Imagens/LogoPEAR.png" alt="loguinho">
-        </div>
 
-        <nav>
-            <ul class="menu">
-                <li><a href="#">Quem Somos</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+<div class="container nav-container">
 
-        <div class="language-selector">
-            <img src="../Imagens/brasil.png" class="flag">
-            <span class="arrow">▾</span>
-            </div>
-    </header>
+<div class="logo">
+<img src="../imgs/LogoPEAR.png" alt="Logo">
+</div>
 
+<nav>
+<ul class="menu">
+<li><a href="quemsomos.html">Quem Somos</a></li>
+<li><a href="servicos.html">Serviços</a></li>
+<li><a href="contato.html">Contato</a></li>
+</ul>
+</nav>
 
+<div class="language-selector">
+<img src="../imgs/brasil.png" class="flag" alt="Português">
+<span class="arrow">▾</span>
+</div>
 
-    <div class="boxFormulario">
+</div>
 
-        <form>
-            <span class="p">Nome</span>
-            <span class="p">Empresa</span>
-
-            <div><input type="text" class="boxLinhas" placeholder="Nome">
-                <input type="text" class="boxLinhas" placeholder="Empresa">
-            </div>
-            <span class="p">Email</span>
-            <span class="p">Departamento</span>
-            <div>
-                <input type="text" class="boxLinhas" placeholder="Email">
-                <input type="text" class="boxLinhas" Placeholder="Departamento">
-            </div>
-            <span class="p">Fone</span>
-            <span class="p">Segmento</span>
-            <div>
-                <input type="text" class="boxLinhas" placeholder="Fone">
-                <input type="text" class="boxLinhas" placeholder="Segmento">
-            </div>
+</header>
 
 
-            <span class="p">Descrição de orçamento</span>
-            <div><input type="text" class="boxLinha3"></div>
-            <div><input type="submit" class="boxBotao">
-            </div>
+<main class="form-container">
+
+<h1>Solicitar Orçamento</h1>
+
+<form class="formulario">
+
+<div class="linha">
+
+<div class="campo">
+<label>Nome</label>
+<input type="text" placeholder="Seu nome">
+</div>
+
+<div class="campo">
+<label>Empresa</label>
+<input type="text" placeholder="Nome da empresa">
+</div>
+
+</div>
 
 
-        </form>
-    </div>
+<div class="linha">
+
+<div class="campo">
+<label>Email</label>
+<input type="email" placeholder="email@email.com" required>
+
+</div>
+
+<div class="campo">
+<label>Departamento</label>
+<input type="text" placeholder="Departamento">
+</div>
+
+</div>
 
 
+<div class="linha">
+
+<div class="campo">
+<label>Telefone</label>
+<input type="text" placeholder="(00) 00000-0000">
+</div>
+
+<div class="campo">
+<label>Segmento</label>
+<input type="text" placeholder="Área da empresa">
+</div>
+
+</div>
 
 
+<div class="campo">
+<label>Descrição do orçamento</label>
+<textarea placeholder="Descreva seu projeto ou necessidade..."></textarea>
+</div>
 
+<button type="submit" class="botao-enviar">
+Enviar orçamento
+</button>
 
+</form>
 
-
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!----<body class="temaSite">
-    
-        
-    
-    
-    <h2>oiiii</h2>
-    
-
-    <div class="boxFormulario">
-        <h1>oi</h1>
-    </div>
-</body>
-
-
-
-
-
-
-
+</main>
 
 </body>
-
 </html>
