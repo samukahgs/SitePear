@@ -1,7 +1,7 @@
+
 .header {
   background: linear-gradient(90deg, rgb(158, 158, 158) 0%, rgb(255, 255, 255), 50%, rgb(156, 156, 156) 100%);
-    background-color: rgb(207, 207, 207);
-    color: white;
+  color: white;
 }
 
 .container {
@@ -21,9 +21,10 @@
 }
 
 .menu {
+    font-size: 20;
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 100px;
     margin: 0;
     padding: 0;
 }
