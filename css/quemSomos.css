@@ -238,3 +238,55 @@ h3 {
   }
 }
 
+
+
+/* footer maneiro */
+
+.footer {
+    background-color: #3b3b3b;
+    color: #ddd;
+    padding: 60px 10%;
+    font-family:Arial, sans-serif;
+}
+
+.footer-container{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  gap: 40px;
+}
+
+.footer-col{
+  max-width:250px;
+}
+
+.footer-col h3{
+  margin-bottom: 15px;
+  color:#fff;
+
+}
+
+.footer-col ul{
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li{
+  margin-bottom: 10px;
+
+}
+
+.footer-col a:hover{
+  color:#fff;
+}
+
+.footer-bottom{
+  border-top:1px solid #444;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color:#aaa;
+}
+
+
