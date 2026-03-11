@@ -20,3 +20,5 @@ progresso.style.width = porcentagem + "%"
 inputs.forEach(input=>{
 input.addEventListener("input", atualizarProgresso)
 })
+
+// O codigo acima é para a animaçã da barra de progresso!!!!!
