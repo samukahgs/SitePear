@@ -1,116 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Formulário de Orçamento</title>
+<link rel="stylesheet" href="/css/formulario.css">
+<link rel="stylesheet" href="/css/header.css">
 
-<link rel="stylesheet" href="../css/header.css">
-<link rel="stylesheet" href="../css/formulario.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
-
+<title>Solicite seu orçamento</title>
 </head>
 
-<body class="temaSite">
+<body>
 
-<header class="header">
-
-<div class="container nav-container">
-
-<div class="logo">
-<img src="../imgs/LogoPEAR.png" alt="Logo">
+<div class="topo">
+<h1>Solicite seu <span>orçamento</span></h1>
+<p>Preencha o formulário abaixo para nossa equipe entrar em contato.</p>
 </div>
 
-<nav>
-<ul class="menu">
-<li><a href="quemsomos.html">Quem Somos</a></li>
-<li><a href="servicos.html">Serviços</a></li>
-<li><a href="contato.html">Contato</a></li>
-</ul>
-</nav>
+<div class="boxFormulario">
 
-<div class="language-selector">
-<img src="../imgs/brasil.png" class="flag" alt="Português">
-<span class="arrow">▾</span>
+<div class="barra">
+<div class="progresso" id="barraProgresso"></div>
 </div>
 
-</div>
+<p class="textoProgresso" id="textoProgresso">
+Formulário 0% completo
+</p>
 
-</header>
-
-
-<main class="form-container">
-
-<h1>Solicitar Orçamento</h1>
-
-<div class="barra-progresso">
-    <div class="progresso" id="progresso"></div>
-</div>
-
-<form class="formulario">
+<form id="form">
 
 <div class="linha">
-
-<div class="campo">
-<label>Nome</label>
-<input type="text" placeholder="Seu nome">
+<input type="text" placeholder="Nome">
+<input type="text" placeholder="Empresa">
 </div>
-
-<div class="campo">
-<label>Empresa</label>
-<input type="text" placeholder="Nome da empresa">
-</div>
-
-</div>
-
 
 <div class="linha">
-
-<div class="campo">
-<label>Email</label>
-<input type="email" placeholder="email@email.com" required>
-
-</div>
-
-<div class="campo">
-<label>Departamento</label>
+<input type="email" placeholder="Email">
 <input type="text" placeholder="Departamento">
 </div>
 
-</div>
-
-
 <div class="linha">
+<input type="text" placeholder="Telefone">
 
-<div class="campo">
-<label>Telefone</label>
-<input type="text" placeholder="(00) 00000-0000">
+<select>
+<option value="">Segmento</option>
+<option>Tecnologia</option>
+<option>Educação</option>
+<option>Financeiro</option>
+</select>
 </div>
 
-<div class="campo">
-<label>Segmento</label>
-<input type="text" placeholder="Área da empresa">
-</div>
+<h3>Serviços desejados</h3>
+
+<div class="servicos">
+
+<label class="servico">
+<input type="checkbox">
+<span>Desenvolvimento Web</span>
+</label>
+
+<label class="servico">
+<input type="checkbox">
+<span>Aplicações</span>
+</label>
+
+<label class="servico">
+<input type="checkbox">
+<span>Banco de Dados</span>
+</label>
+
+<label class="servico">
+<input type="checkbox">
+<span>APIs</span>
+</label>
 
 </div>
 
+<textarea placeholder="Descrição do projeto"></textarea>
 
-<div class="campo">
-<label>Descrição do orçamento</label>
-<textarea placeholder="Descreva seu projeto ou necessidade..."></textarea>
-</div>
-
-<button type="submit" class="botao-enviar">
+<button type="submit">
 Enviar orçamento
 </button>
 
 </form>
 
-</main>
-<script src="../js/formulario.js"></script>
+</div>
+
+<script src="/Js/formulario.js"></script>
+
 </body>
 </html>
