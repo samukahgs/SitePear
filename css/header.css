@@ -1,68 +1,191 @@
+/* RESET */
 
-.header {
-  background: linear-gradient(90deg, rgb(158, 158, 158) 0%, rgb(255, 255, 255), 50%, rgb(156, 156, 156) 100%);
-  color: white;
-}
-
-.container {
-    width: 90%;
-    max-width: 1700px;
-    margin: 0 auto;
-}
-
-.logo img {
-  height: 100px;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu {
-    font-size: 20;
-    list-style: none;
-    display: flex;
-    gap: 100px;
-    margin: 0;
-    padding: 0;
-}
-
-.menu a {
-  text-decoration: none;
-  color: rgb(83, 82, 82);
-  transition: 0.3s;
-}
-
-.menu a:hover {
-  color: #00bfff;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 
+/* HEADER */
 
-.language-selctor {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer
+.header{
+
+background:linear-gradient(120deg,#182435,#0f1b2b);
+
+border-bottom:1px solid #24344d;
+
+padding:12px 0;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
 }
+
+
+/* CONTAINER */
+
+.container{
+
+width:90%;
+
+max-width:1600px;
+
+margin:0 auto;
+
+}
+
+
+/* NAVBAR */
+
+.nav-container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+
+/* LOGO */
+
+.logo img{
+
+height:65px;
+
+}
+
+
+/* MENU */
+
+.menu{
+
+list-style:none;
+
+display:flex;
+
+gap:40px;
+
+font-size:18px;
+
+}
+
+
+.menu a{
+
+text-decoration:none;
+
+color:#cbd5e1;
+
+font-weight:500;
+
+position:relative;
+
+transition:0.3s;
+
+}
+
+
+/* HOVER MENU */
+
+.menu a:hover{
+
+color:#2ea3ff;
+
+}
+
+
+.menu a::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-4px;
+
+left:0;
+
+width:0%;
+
+height:2px;
+
+background:#2ea3ff;
+
+transition:0.3s;
+
+}
+
+
+.menu a:hover::after{
+
+width:100%;
+
+}
+
+
+/* BOTÕES DE IDIOMA */
+
+.language-selector{
+
+display:flex;
+
+gap:10px;
+
+}
+
+
+/* BOTÃO */
+
+.lang-btn{
+
+display:flex;
+
+align-items:center;
+
+gap:6px;
+
+background:#16202f;
+
+border:1px solid #334155;
+
+color:white;
+
+padding:6px 10px;
+
+border-radius:6px;
+
+cursor:pointer;
+
+transition:0.25s;
+
+}
+
+
+.lang-btn:hover{
+
+background:#2ea3ff;
+
+transform:translateY(-1px);
+
+}
+
+
+/* BANDEIRA */
 
 .flag{
-  width: 24px;
-  height: 16px;
-  object-fit: cover;
+
+width:20px;
+
+height:14px;
+
+object-fit:cover;
+
+border-radius:2px;
 
 }
-
-.arrow {
-  font-size: 16px;
-  color: white;
-
-}
-
-
-
-
-
-

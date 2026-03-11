@@ -8,38 +8,50 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/header.css">
+
     <link rel="stylesheet" href="../css/servicos.css">
+    <link rel="stylesheet" href="../css/header.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body data-bs-theme="dark">
-
     <header class="header">
-        <div class="container nav-container">
 
-            <div class="logo">
-                <a href="main.html">
-                    <img src="../imgs/LogoPEAR.png" alt="Logo">
-                </a>
-            </div>
+<div class="container nav-container">
 
-            <nav>
-                <ul class="menu">
-                    <li><a href="../html/quemSomos.html">Quem Somos</a></li>
-                    <li><a href="../html/servicos.html">Serviços</a></li>
-                    <li><a href="../html/formulario.html">Contato</a></li>
-                </ul>
-            </nav>
+<div class="logo">
+<img src="../imgs/LogoPEAR.png">
+</div>
 
-            <div class="language-selector">
-                <img src="../imgs/brasil.png" class="flag" alt="Português">
-                <span class="arrow">▾</span>
-            </div>
+<nav>
+<ul class="menu">
 
-        </div>
-    </header>
+<li><a href="../HTML/main.html">Home</a></li>
+<li><a href="../HTML/quemSomos.html">Quem Somos</a></li>
+<li><a href="../HTML/servicos.html">Serviços</a></li>
+<li><a href="../HTML/formulario.html">Contato</a></li>
+
+</ul>
+</nav>
+
+<div class="language-selector">
+
+<button onclick="traduzir('pt')" class="lang-btn">
+<img src="../imgs/brasil.png" class="flag">
+PT
+</button>
+
+<button onclick="traduzir('en')" class="lang-btn">
+<img src="../imgs/8281549.png" class="flag">
+EN
+</button>
+
+</div>
+
+</div>
+
+</header>
 
     <main>
 
@@ -83,27 +95,37 @@
 
                     <div class="info busca">
                         <h2>Busca UX</h2>
-                        <p>Pesquisa e análise de experiência do usuário para entender necessidades e melhorar produtos digitais.</p>
+                        <p>Realizamos pesquisas aprofundadas para compreender o comportamento, as necessidades e as expectativas dos usuários. Utilizamos métodos como entrevistas, análise de dados, testes de usabilidade e jornadas do usuário para identificar oportunidades de melhoria em produtos e serviços digitais.
+
+Nosso objetivo é transformar dados e percepções em insights estratégicos, permitindo que empresas desenvolvam soluções mais intuitivas, eficientes e alinhadas com o que o usuário realmente precisa. Com uma base sólida de pesquisa, ajudamos a reduzir riscos no desenvolvimento e aumentar a satisfação e retenção dos clientes.</p>
                     </div>
 
                     <div class="info consul">
                         <h2>Consultoria</h2>
-                        <p>Ajudamos empresas a definir estratégias tecnológicas e digitais eficientes.</p>
+                        <p>Oferecemos consultoria especializada para ajudar empresas a planejar, estruturar e evoluir seus produtos digitais. Analisamos processos, tecnologias, experiência do usuário e estratégias de mercado para identificar pontos de melhoria e oportunidades de crescimento.
+
+Nossa consultoria envolve diagnóstico completo, definição de estratégias digitais, recomendações técnicas e acompanhamento na implementação de melhorias. Trabalhamos lado a lado com nossos clientes para garantir decisões mais assertivas, inovação contínua e resultados consistentes.</p>
                     </div>
 
                     <div class="info design">
                         <h2>Design</h2>
-                        <p>Criamos interfaces modernas e intuitivas focadas na melhor experiência do usuário.</p>
+                        <p>Criamos experiências visuais modernas, funcionais e centradas no usuário. Nosso processo de design combina criatividade com metodologia, passando por etapas como wireframes, prototipagem, design de interface (UI) e validação com usuários.
+
+Buscamos desenvolver interfaces intuitivas, acessíveis e esteticamente atraentes que fortaleçam a identidade da marca e proporcionem uma navegação fluida. O resultado são produtos digitais que não apenas parecem bons, mas também entregam valor real para os usuários.</p>
                     </div>
 
                     <div class="info dev">
                         <h2>Desenvolvimento</h2>
-                        <p>Desenvolvimento de sistemas, plataformas e aplicações web modernas.</p>
+                        <p>Transformamos ideias e projetos em soluções digitais robustas, seguras e escaláveis. Nossa equipe desenvolve aplicações web e sistemas personalizados utilizando tecnologias modernas e boas práticas de engenharia de software.
+
+Garantimos código limpo, desempenho otimizado e integração com APIs e outros sistemas, permitindo que sua plataforma cresça de forma sustentável. Nosso foco é entregar produtos tecnológicos confiáveis que apoiem o crescimento do seu negócio.</p>
                     </div>
 
                     <div class="info projetos">
                         <h2>Projetos</h2>
-                        <p>Planejamento e execução de projetos digitais completos para empresas.</p>
+                        <p>Gerenciamos e executamos projetos digitais do início ao fim, garantindo organização, eficiência e qualidade em todas as etapas. Desde o planejamento inicial até a entrega final, coordenamos processos, equipes e recursos para transformar ideias em soluções concretas.
+
+Utilizamos metodologias ágeis para manter transparência, flexibilidade e entregas contínuas, permitindo ajustes rápidos e alinhamento constante com os objetivos do cliente. Assim, asseguramos que cada projeto seja entregue dentro do prazo, do orçamento e com alto padrão de qualidade.</p>
                     </div>
 
                 </div>
@@ -254,7 +276,10 @@
         </div>
 
     </footer>
+<div id="google_translate_element" style="display:none"></div>
 
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="../JS/translate.js"></script>
 </body>
 
 </html>
