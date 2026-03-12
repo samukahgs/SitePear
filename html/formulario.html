@@ -80,7 +80,7 @@ Formulário 0% completo
 </div>
 
 <div class="linha">
-<input type="tel" placeholder="Telefone" minlength="9" maxlength="13">
+<input type="tel" placeholder="xx (xx) xxxxx-xxxx" minlength="9" maxlength="13"onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;">
 
 <select>
 <option value="">Segmento</option>
