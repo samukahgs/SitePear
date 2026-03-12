@@ -127,7 +127,7 @@ display:block;
   margin-top:120px;
   text-align:center;
   
-  padding: 150px 10px;
+  padding: 80px 10px;
   margin-left: 80px;
   margin-right: 80px;
   margin-top: 80px;
@@ -220,35 +220,61 @@ margin: auto;
 .item{
 border-bottom: 1px solid #333;
 padding: 22px 0;
+transition: 0.3s;
 }
 
 .item input{
 display: none;
 }
 
+.item:hover{
+  background:rgba(255,255,255,0.02);
+  padding-left: 10px;
+} 
+
 .titulooutros{
 display: flex;
 justify-content: space-between;
+align-items: center;
 cursor: pointer;
 font-size: 22px;
+font-weight: 500;
 }
 
 .conteudooutros{
-    display: none;
-    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.conteudooutros p{
+  color: #cfcfcf;
+  line-height: 1.6;
+  font-size: 16px;
 }
 
 .item input:checked ~ .conteudooutros{
-    display: block;
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 10px;
 }
 
 .icon{
-    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
     transition: 0.3s;
 }
 
 .item input:checked + .titulooutros .icon{
     transform: rotate(45deg);
+    border-color: #4ea3ff;
+    color: #4ea3ff;
 }
 
 
