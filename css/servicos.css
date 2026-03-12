@@ -4,6 +4,19 @@ margin:0;
 padding:0;
 }
 
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:visited{
+  color: white;
+}
+
+a:hover{
+  color: #00a3ff; /* muda de cor ao passar o mouse */
+}
+
 :root{
 --bg:#1e2836;
 --text:#ffffff;

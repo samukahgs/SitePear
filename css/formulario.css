@@ -5,6 +5,19 @@ box-sizing:border-box;
 font-family:Arial;
 }
 
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:visited{
+  color: white;
+}
+
+a:hover{
+  color: #00a3ff; /* muda de cor ao passar o mouse */
+}
+
 body{
 
 background:linear-gradient(120deg,#182435,#0f1b2b);
